@@ -1,0 +1,81 @@
+body {
+    font-family: Calibri, Arial, Verdana, sans-serif;
+    background-color: #ffffff; 
+    margin: 0;
+}
+
+.screen {
+    display: flex;
+    align-items: center;
+    min-height: 100dvh;
+    flex-direction: column;
+}
+
+.main-btn-container {
+   display: flex;
+   flex-direction: column;
+   width: 90%;
+   justify-content: center;
+}
+
+.main-button {
+    display: flex;
+    flex-direction: row;
+    font-family: inherit;
+    background-color: #ffffff; 
+    border: solid 3px #000000;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+    padding: 15px 20px;
+    text-align: left;
+    font-size: 16px;
+    margin: 10px 0;
+    cursor: pointer;
+    min-width: 0;
+}
+
+.main-button:hover {
+    background-color: #dfdcdc; 
+}
+
+.main-button.refills{
+    border: solid 3px #f65f5f;
+}
+
+.main-button.reminders{
+    border: solid 3px #5d97ed;
+}
+
+.main-button.status{
+    border: solid 3px #ece384;
+}
+
+.main-button.history{
+    border: solid 3px #efb13d;
+}
+
+.main-button.family{
+    border: solid 3px #6fea7f;
+}
+
+.main-button.contact{
+    border: solid 3px #a334ed;
+}
+
+.main-img {
+    width: 32px; 
+    height: 32px;
+    margin-right: 15px;
+    align-self: center;
+}
+
+.btn-title {
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+.btn-desc{
+    font-size: 16px;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
