@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <img src="assests/header-icons/profile.png" alt="Profile Icon" id="profile-icon">
+        <input type="search" id="search-bar" placeholder="Search...">
+        <img src="assests/header-icons/cart.png" alt="Cart Icon" id="cart-icon">
+    </header>
     
     <div class="screen-content">
         <!-- Main Screen -->
@@ -14,49 +19,99 @@
             <h1>Pharmacy</h1>
             <div class="main-btn-container">
                 <button id="refills-btn" class="main-button refills">
-                    <img src="assests/refill.png" alt="Refill Icon" class="main-img"/>
+                    <img src="assests/main-btn-icons/refill.png" alt="Refill Icon" class="main-img"/>
                     <div>
                         <span class="btn-title">Refills</span><br>
                         <span class="btn-desc">Manage and refill your prescriptions</span>
                     </div>
                 </button>
                 <button id="reminders-btn" class="main-button reminders">
-                    <img src="assests/reminder.png" alt="Reminder Icon" class="main-img"/>
+                    <img src="assests/main-btn-icons/reminder.png" alt="Reminder Icon" class="main-img"/>
                     <div>
                         <span class="btn-title">Reminders</span><br>
                         <span class="btn-desc">Schedule reminders to take your medication</span>
                     </div>
                 </button>
                 <button id="status-btn" class="main-button status">
-                    <img src="assests/status.png" alt="Status Icon" class="main-img"/>
+                    <img src="assests/main-btn-icons/status.png" alt="Status Icon" class="main-img"/>
                     <div>
                         <span class="btn-title">Status</span><br>
                         <span class="btn-desc">View your prescription status</span>
                     </div>
                 </button>
                 <button id="history-btn" class="main-button history">
-                    <img src="assests/history.png" alt="History Icon" class="main-img"/>
+                    <img src="assests/main-btn-icons/history.png" alt="History Icon" class="main-img"/>
                     <div>
                         <span class="btn-title">History</span><br>
                         <span class="btn-desc">View your prescription/order history</span>
                     </div>
                 </button>
                 <button id="family-btn" class="main-button family">
-                    <img src="assests/family.png" alt="Family Icon" class="main-img"/>
+                    <img src="assests/main-btn-icons/family.png" alt="Family Icon" class="main-img"/>
                     <div>
                         <span class="btn-title">Family</span><br>
                         <span class="btn-desc">Manage Family Members</span>
                     </div>
                 </button>
                 <button id="contact-btn" class="main-button contact">
-                    <img src="assests/contact.png" alt="Contact Icon" class="main-img"/>
+                    <img src="assests/main-btn-icons/contact.png" alt="Contact Icon" class="main-img"/>
                     <div>
                         <span class="btn-title">Contact</span><br>
                         <span class="btn-desc">Easily contact a local pharmacist</span>
                     </div>
                 </button>
             </div>
+        </div>
+        <!-- Refills Screen-->
+        <div class="screen refills" style="display:none;">
+            <h1>Refills</h1>
+        </div>
+        <!-- Add Prescription Screen-->
+        <div class="screen add-prescription" style="display:none;">
+            <h1>Add Prescription</h1>
+        </div>
+        <!-- Reminders Screen-->
+        <div class="screen reminders" style="display:none;">
+            <h1>Reminders</h1>
+        </div>
+        <!-- Add Reminder Screen-->
+        <div class="screen add-reminder" style="display:none;">
+            <h1>Add Reminder</h1>
+        </div>
+        <!-- History Screen-->
+        <div class="screen history" style="display:none;">
+            <h1>History</h1>
+        </div>
+        <!-- Contact Screen-->
+        <div class="screen contact" style="display:none;">
+            <h1>Contact</h1>
+        </div>
+    </div>
 
+    <footer>
+        <nav>
+            <button id="shop-btn" class="footer-btn">
+                <img src="assests/footer-icons/shop.png" alt="Shop Icon">
+                <span>Shop</span>
+            </button>
+            <button id="deals-btn" class="footer-btn">
+                <img src="assests/footer-icons/deals.png" alt="Deals Icon">
+                <span>Deals</span>
+            </button>
+            <button id="discover-btn" class="footer-btn">
+                <img src="assests/footer-icons/discover.png" alt="Discover Icon">    
+                <span>Discover</span>
+            </button>
+            <button id="health-btn" class="footer-btn">
+                <img src="assests/footer-icons/health.png" alt="Health Icon">    
+                <span>Health</span>
+            </button>
+            <button id="for-you-btn" class="footer-btn">
+                <img src="assests/footer-icons/for-you.png" alt="For You Icon">
+                <span>For You</span>
+            </button>
+        </nav>
+    </footer>
     
 
     <script src="script.js"></script>
