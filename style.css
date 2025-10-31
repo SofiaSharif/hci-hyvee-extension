@@ -204,3 +204,37 @@ footer span {
     color: #d82727;
     text-decoration: underline;
 }
+
+.contact-card-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.contact-card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 20px;
+    border: solid 2px black;
+    background-color: rgb(202, 201, 201);
+    padding: 18px;
+    border-radius: 20px;
+    justify-content: space-between;
+}
+
+.contact-title {
+    font-weight: bold;
+    font-size: 28px;
+    text-decoration: underline;
+}
+
+.contact-info {
+    font-size: 26px;
+}
+
+.contact-card img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
