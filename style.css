@@ -238,3 +238,19 @@ footer span {
     height: 20px;
     vertical-align: middle;
 }
+
+/* History Section */
+
+.history-card{
+    display: flex;
+    flex-direction: column;
+    font-family: inherit;
+    background-color: #ffffff; 
+    border: solid 3px #000000;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+    padding: 15px 20px;
+    text-align: left;
+    font-size: 16px;
+    min-width: 0;
+}
