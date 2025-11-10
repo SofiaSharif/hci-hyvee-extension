@@ -254,3 +254,28 @@ footer span {
     font-size: 16px;
     min-width: 0;
 }
+
+.hist-card-header{
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.hist-card-btn img{
+    width: 20px;
+    height: 20px;
+}
+
+.hist-card-btn{
+    grid-column: 1;
+    justify-self: right;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.hist-card-icons{
+    grid-column: 1;
+}
