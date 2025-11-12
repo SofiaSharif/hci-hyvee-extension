@@ -116,21 +116,25 @@
                 <h1>History</h1>
             </div>
             <div class="main-btn-container"> <!-- This class is used because of the spacing. -->
-                    <div class="history-card">
-                        <div class="hist-card-header">
-                            <p> Prescription Title </p>
-                            <div class="hist-card-icons">
-                                <button id="cart-btn" class="hist-card-btn">
-                                <img src="assests/main-btn-icons/status.png" alt="Cart Icon"> <!-- Temp Icons -->
-                            </button>
-                                <button id="edit-btn" class="hist-card-btn">
-                                <img src="assests/main-btn-icons/history.png" alt="Edit Icon">
-                            </button>
-                            </div>
+                    <div class="hist-container">
+                        <p class="hist-title"> Title </p>
+                        <button id="cart-btn" class="hist-cart-icon">
+                            <img src="assests/main-btn-icons/refill.png" alt="Cart Icon">
+                        </button>
+                        <button id="more-btn" class="hist-more-icon">
+                            <img src="assests/main-btn-icons/status.png" alt="More Icon">
+                        </button>
+                        <div class="hist-amount hist-box">
+                            <img class="hist-icon-size" src="assests/main-btn-icons/family.png" alt="Amount Icon">
+                            <p> Amount to take... </p>
                         </div>
-                        <details>
-                            <summary> Prescription Details </summary>
-                            This would be the detailed information for this prescription medication. Unfortunately I do not wish to individually fill out each one. Therefore they all get the same description. I'll have this done in code later.
+                        <div class="hist-time hist-box">
+                            <img class="hist-icon-size" src="assests/main-btn-icons/history.png" alt="Time Icon">
+                            <p> Time to take... </p>
+                        </div>
+                        <details class="hist-description">
+                            <summary class="text-underline"> More Prescription Information </summary>
+                            This is where more information on the prescription needs to be autofilled. I am far too lazy to do anything more than this work rn tbh...
                         </details>
                     </div>
                 </div>
