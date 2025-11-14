@@ -263,15 +263,15 @@ footer span {
     border: solid 3px #000000;
     border-radius: 20px;
     color: rgb(0,0,0);
-    padding: 15px 2px;
+    padding: 15px 15px;
     font-size: 16px;
     min-width: 0;
     grid-template-columns: auto;
     grid-template-rows: auto;
     grid-template-areas: 
-        "prescription-name prescription-name cart-icon more-icon"
-        "amount amount time time"
-        "description description description description";
+        "prescription-name prescription-name btn-icons"
+        "amount time time"
+        "description description description";
     column-gap: 10px;
     row-gap: 10px;
 }
@@ -281,26 +281,14 @@ footer span {
     font-size: 22px;
 }
 
-.hist-cart-icon {
-    grid-area: cart-icon;
+.hist-btn-icons {
+    grid-area: btn-icons;
     background-color: transparent;
     border: none;
     cursor: pointer;
 }
 
-.hist-cart-icon img {
-    width: 26px;
-    height: 26px;
-}
-
-.hist-more-icon {
-    grid-area: more-icon;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-}
-
-.hist-more-icon img {
+.hist-btn-icons img {
     width: 26px;
     height: 26px;
 }
