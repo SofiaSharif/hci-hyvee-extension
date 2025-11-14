@@ -263,7 +263,7 @@ footer span {
     border: solid 3px #000000;
     border-radius: 20px;
     color: rgb(0,0,0);
-    padding: 15px 2px;
+    padding: 15px 15px;
     font-size: 16px;
     min-width: 0;
     grid-template-columns: auto;
