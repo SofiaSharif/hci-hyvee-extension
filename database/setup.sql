@@ -25,11 +25,10 @@ CREATE TABLE prescriptions (
 );
 
 INSERT INTO users (name) VALUES 
-    ('Sheinddide'), 
-    ('Pandin');
+    ('Sheinddide');
 
 INSERT INTO prescriptions (user_id, name, amount, time_to_take, description)
 VALUES
     (1, 'Lisinopril', '10 mg', 'Once daily in morning', 'For high blood pressure'),
     (1, 'Amoxicillin', '250 mg', 'Every 8 hours', 'For infection. Finish all.'),
-    (2, 'Metformin', '500 mg', 'Twice daily with meals', 'For diabetes');
+    (1, 'Metformin', '500 mg', 'Twice daily with meals', 'For diabetes');
