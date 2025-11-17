@@ -96,7 +96,7 @@ header img {
     justify-content: space-between;
 }
 
-.main-btn-container {
+.main-container {
    display: flex;
    flex-direction: column;
    width: 90%;
@@ -239,23 +239,7 @@ footer span {
     vertical-align: middle;
 }
 
-/* History Section */
-
-.history-card{ /* Used for the main div */
-    display: flex;
-    flex-direction: column;
-    font-family: inherit;
-    background-color: #ffffff; 
-    border: solid 3px #000000;
-    border-radius: 20px;
-    color: rgb(0, 0, 0);
-    padding: 15px 20px;
-    text-align: left;
-    font-size: 16px;
-    min-width: 0;
-}
-
-.hist-container {
+.rx-container {
     display: grid;
     display: inline-grid;
     font-family: inherit;
@@ -276,32 +260,32 @@ footer span {
     row-gap: 10px;
 }
 
-.hist-title {
+.rx-title {
     grid-area: prescription-name;
     font-size: 22px;
 }
 
-.hist-btn-icons {
+.rx-btn-icons {
     grid-area: btn-icons;
     background-color: transparent;
     border: none;
     cursor: pointer;
 }
 
-.hist-btn-icons img {
+.rx-btn-icons img {
     width: 26px;
     height: 26px;
 }
 
-.hist-amount {
+.rx-amount {
     grid-area: amount;
 }
 
-.hist-time {
+.rx-time {
     grid-area: time;
 }
 
-.hist-description {
+.rx-description {
     grid-area: description;
 }
 
@@ -309,12 +293,12 @@ footer span {
     text-decoration: underline;
 }
 
-.hist-icon-size {
+.rx-icon-size {
     width: 26px;
     height: 26px;
 }
 
-.hist-box {
+.rx-box {
     display: flex;
     flex-direction: row;
     align-items: center;

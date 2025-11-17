@@ -17,7 +17,7 @@
         <!-- Main Screen -->
         <div id="screen main" class="screen main">
             <h1>Pharmacy</h1>
-                <div class="main-btn-container">
+                <div class="main-container">
                     <button id="refills-btn" class="main-button refills">
                         <img src="assests/main-btn-icons/refill.png" alt="Refill Icon" class="main-img"/>
                         <div>
@@ -70,7 +70,7 @@
                 </button>
                 <h1>Refills</h1>
             </div>
-            <div id="prescription-list" class="main-btn-container"> <!-- This class is used because of the spacing. -->
+            <div id="prescription-list" class="main-container"> <!-- This class is used because of the spacing. -->
                 <!-- Prescription cards will be filled here from the database -->
             </div>
         </div>
@@ -118,26 +118,26 @@
                 </button>
                 <h1>History</h1>
             </div>
-            <div class="main-btn-container"> <!-- This class is used because of the spacing. -->
-                <div class="hist-container">
-                    <p class="hist-title"> Title </p>
-                    <div class="hist-btn-icons">
-                        <button id="cart-btn" class="hist-btn-icons">
+            <div class="main-container"> <!-- This class is used because of the spacing. -->
+                <div class="rx-container">
+                    <p class="rx-title"> Title </p>
+                    <div class="rx-btn-icons">
+                        <button id="cart-btn" class="rx-btn-icons">
                             <img src="assests/screen-icons/cart.png" alt="Cart Icon">
                         </button>
-                        <button id="more-btn" class="hist-btn-icons">
+                        <button id="more-btn" class="rx-btn-icons">
                             <img src="assests/screen-icons/ellipses.png" alt="More Icon">
                         </button>
                     </div>
-                    <div class="hist-amount hist-box">
-                        <img class="hist-icon-size" src="assests/screen-icons/amount.png" alt="Amount Icon">
+                    <div class="rx-amount rx-box">
+                        <img class="rx-icon-size" src="assests/screen-icons/amount.png" alt="Amount Icon">
                         <p> Amount to take... </p>
                     </div>
-                    <div class="hist-time hist-box">
-                        <img class="hist-icon-size" src="assests/screen-icons/clock.png" alt="Time Icon">
+                    <div class="rx-time rx-box">
+                        <img class="rx-icon-size" src="assests/screen-icons/clock.png" alt="Time Icon">
                         <p> Time to take... </p>
                     </div>
-                    <details class="hist-description">
+                    <details class="rx-description">
                         <summary class="text-underline"> More Prescription Information </summary>
                         This is where more information on the prescription needs to be autofilled. I am far too lazy to do anything more than this work rn tbh...
                     </details>

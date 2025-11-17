@@ -25,27 +25,27 @@ async function fetchPrescriptions() {
 
         prescriptions.forEach(rx => {
             const card = document.createElement('div');
-            card.className = 'hist-container';
+            card.className = 'rx-container';
 
             card.innerHTML = `
-                <p class="hist-title"> ${rx.name} </p>
-                    <div class="hist-btn-icons">
-                        <button id="cart-btn" class="hist-btn-icons">
+                <p class="rx-title"> ${rx.name} </p>
+                    <div class="rx-btn-icons">
+                        <button id="cart-btn" class="rx-btn-icons">
                             <img src="assests/screen-icons/cart.png" alt="Cart Icon">
                         </button>
-                        <button id="more-btn" class="hist-btn-icons">
+                        <button id="more-btn" class="rx-btn-icons">
                             <img src="assests/screen-icons/ellipses.png" alt="More Icon">
                         </button>
                     </div>
-                    <div class="hist-amount hist-box">
-                        <img class="hist-icon-size" src="assests/screen-icons/amount.png" alt="Amount Icon">
+                    <div class="rx-amount rx-box">
+                        <img class="rx-icon-size" src="assests/screen-icons/amount.png" alt="Amount Icon">
                         <p> ${rx.amount} </p>
                     </div>
-                    <div class="hist-time hist-box">
-                        <img class="hist-icon-size" src="assests/screen-icons/clock.png" alt="Time Icon">
+                    <div class="rx-time rx-box">
+                        <img class="rx-icon-size" src="assests/screen-icons/clock.png" alt="Time Icon">
                         <p> ${rx.time_to_take} </p>
                     </div>
-                    <details class="hist-description">
+                    <details class="rx-description">
                         <summary class="text-underline"> More Prescription Information </summary>
                         ${rx.description}
                     </details>
