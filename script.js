@@ -67,3 +67,7 @@ refillsBtn.onclick = () => {
     showScreen('screen refills');
     fetchPrescriptions();
 }
+
+// function generateReminderDivs {
+
+// }
