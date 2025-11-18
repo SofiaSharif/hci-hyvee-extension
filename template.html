@@ -98,21 +98,21 @@
                     <img src="assests/screen-icons/plus.png" alt="Plus Icon">
                 </button>
             </div>
-            <div class="main-container"> <!-- This class is used because of the spacing. -->
+            <div class="main-container" id="reminders-main-container"> <!-- This class is used because of the spacing. -->
                 <div class="reminder-container">
                     <div class="reminder-container-top-bar">
                         <u class="reminder-title"> Name </u>
-                        <button id="reminder-more-btn-0" class="reminder-btn-icons">
+                        <button class="reminder-btn-icons">
                             <img src="assests/screen-icons/ellipses.png" alt="More Icon">
                         </button>
                     </div>
                     <b class="reminder-time-display">
-                        --:-- AM/PM
+                        --:-- a.m./p.m.
                     </b>
                     <div>
                         <label class="reminders-screen reminder-day"> M </label>
                         <label class="reminders-screen reminder-day"> T </label>
-                        <label class="reminders-screen reminder-day"> W </label>
+                        <label class="reminders-screen reminder-day clicked"> W </label>
                         <label class="reminders-screen reminder-day"> TH </label>
                         <label class="reminders-screen reminder-day clicked"> F </label>
                         <label class="reminders-screen reminder-day"> S </label>
@@ -124,49 +124,26 @@
         <!-- Add Reminder Screen-->
         <div id="screen add-reminder" class="screen add-reminder">
             <div class="screen-header">
-                <button class="back-btn" onclick="showScreen('screen reminders')">
+                <button class="back-btn" onclick="reminderGoBack('screen reminders')">
                     <img src="assests/screen-icons/back.png" alt="Back Icon">
                 </button>
                 <h1>Add Reminder</h1>
             </div>
+            <b id="add-reminder-alert"></b>
             <container class="reminder-timer-selection">
-                <select size="2" class="select-div">  <!-- Note: I've removed the 'multiple' attribute -->
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                    <option>6</option>
-                    <option>7</option>
-                    <option>8</option>
-                    <option>9</option>
-                    <option>10</option>
-                    <option>11</option>
-                    <option>12</option> 
+                <select size="2" class="select-div" id="add-reminder-hour-select">  <!-- Note: I've removed the 'multiple' attribute -->
                 </select>
                 <p style="font-size:80px; width: 60px">&nbsp;:&nbsp;</p>
-                <select size="2" class="select-div">  <!-- Note: I've removed the 'multiple' attribute -->
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                    <option>6</option>
-                    <option>7</option>
-                    <option>8</option>
-                    <option>9</option>
-                    <option>10</option>
-                    <option>11</option>
-                    <option>12</option>
+                <select size="2" class="select-div" id="add-reminder-minute-select">  <!-- Note: I've removed the 'multiple' attribute -->
                 </select>
-                <select size="1" class="select-div">  <!-- Note: I've removed the 'multiple' attribute -->
-                    <option>am</option>
-                    <option>pm</option>
+                <select size="1" class="select-div" id="add-reminder-meridiem-select">  <!-- Note: I've removed the 'multiple' attribute -->
+                    <option selected = "selected">a.m.</option>
+                    <option>p.m.</option>
                 </select>
             </container>
             <div style="width: 403px">
                 <h2>Medication:</h2>
-                <input></input>
+                <input id="add-reminder-medication-input"></input>
             </div>
             <div style="width: 403px">
                 <h2>Repeats:</h2>
@@ -202,7 +179,9 @@
                 </div>
             </div>
             <div>
-                <button class="btn add-reminder" id="add-reminder-button">ADD</button>
+                <button class="btn add-reminder" id="add-reminder-button" onclick="addNewReminder()">
+                    ADD
+                </button>
             </div>
         </div>
         <!-- Status Screen-->

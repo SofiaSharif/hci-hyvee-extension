@@ -163,6 +163,18 @@ header img {
     font-size: 40px;
 }
 
+#add-reminder-alert {
+    font-size: 36px;
+    margin: 0px;
+    margin-bottom: 4px;
+}
+    #add-reminder-alert.added {
+        color: green;
+    }
+    #add-reminder-alert.error {
+        color: red;
+    }
+
 .day-check {
     appearance: none;
     -webkit-appearance: none;
