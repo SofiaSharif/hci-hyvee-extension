@@ -70,11 +70,12 @@
                 </button>
                 <h1>Refills</h1>
             </div>
-            <button class="add-btn" onclick="showScreen('screen add-prescription')">
+            <div class="reminder-add-btn">
+                <button class="add-btn" onclick="showScreen('screen add-prescription')">
                     <img src="assests/screen-icons/plus.png" alt="Plus Icon">
                 </button>
-            <div id="prescription-list" class="main-container"> <!-- This class is used because of the spacing. -->
-                
+            </div>
+            <div id="prescription-list" class="main-container">
                 <!-- Prescription cards will be filled here from the database -->
             </div>
         </div>
@@ -112,7 +113,7 @@
                     <img src="assests/screen-icons/plus.png" alt="Plus Icon">
                 </button>
             </div>
-            <div class="main-container" id="reminders-main-container"> <!-- This class is used because of the spacing. -->
+            <div class="main-container" id="reminders-main-container">
                 <div class="reminder-container">
                     <div class="reminder-container-top-bar">
                         <u class="reminder-title"> Name </u>
@@ -145,12 +146,12 @@
             </div>
             <b id="add-reminder-alert"></b>
             <container class="reminder-timer-selection">
-                <select size="2" class="select-div" id="add-reminder-hour-select">  <!-- Note: I've removed the 'multiple' attribute -->
+                <select size="2" class="select-div" id="add-reminder-hour-select">
                 </select>
                 <p style="font-size:80px; width: 60px">&nbsp;:&nbsp;</p>
-                <select size="2" class="select-div" id="add-reminder-minute-select">  <!-- Note: I've removed the 'multiple' attribute -->
+                <select size="2" class="select-div" id="add-reminder-minute-select">
                 </select>
-                <select size="1" class="select-div" id="add-reminder-meridiem-select">  <!-- Note: I've removed the 'multiple' attribute -->
+                <select size="1" class="select-div" id="add-reminder-meridiem-select">
                     <option selected = "selected">a.m.</option>
                     <option>p.m.</option>
                 </select>
@@ -194,7 +195,7 @@
             </div>
             <div>
                 <button class="btn add-reminder" id="add-reminder-button" onclick="addNewReminder()">
-                    ADD
+                    Add
                 </button>
             </div>
         </div>
@@ -215,7 +216,7 @@
                 </button>
                 <h1>History</h1>
             </div>
-            <div class="main-container"> <!-- This class is used because of the spacing. -->
+            <div class="main-container">
                 <div class="rx-container">
                     <p class="rx-title"> Title </p>
                     <div class="rx-btn-icons">
