@@ -82,13 +82,6 @@ async function submitPrescription() {
             })
         });
        const result = await response.json();
-       if (result.success){
-        alert("Prescription successfully added!");
-        showScreen('screen refills');
-        fetchPrescriptions();
-       }else {
-            alert("Error adding prescription");
-       }
 
         }catch(err){
             console.error(err);
