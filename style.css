@@ -462,3 +462,34 @@ footer span {
     align-items: center;
     gap: 8px;
 }
+.form-wrapper{
+    width: 90%;
+    margin-top: 20px;
+}
+label{
+    font-size: 15px;
+    margin-bottom: 10px;
+    display: block;
+}
+.input-field{
+    width: 100%;
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 15px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+.submit-btn{
+    display: block;
+    margin: 35px auto 0;
+    padding: 10px;
+    background: #FFB3B3;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+.submit-btn:hover{
+    background: #FF9A9A;
+}

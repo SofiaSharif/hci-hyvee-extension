@@ -68,6 +68,33 @@ refillsBtn.onclick = () => {
     fetchPrescriptions();
 }
 
+async function submitPrescription() {
+    const rxNumber = document.getElementById("rx-number").value.trim();
+    const dob = document.getElementById("dob").value.trim;
+
+    try{
+        const response = await fetch(`${API_URL}/api/prescriptions`,{ 
+            method: "POST",
+            headers: {"Content-Type": "application/json"},
+            body: JSON.stringify({
+                rx_number: rxNumber,
+                dob: dob
+            })
+        });
+       const result = await response.json();
+       if (result.success){
+        alert("Prescription successfully added!");
+        showScreen('screen refills');
+        fetchPrescriptions();
+       }else {
+            alert("Error adding prescription");
+       }
+
+        }catch(err){
+            console.error(err);
+        }
+    
+}
 function generateAddReminderTimeDivs() {
     let hour_select = document.getElementById("add-reminder-hour-select");
     let minute_select = document.getElementById("add-reminder-minute-select");
