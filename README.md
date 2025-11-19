@@ -23,3 +23,5 @@ The three tasks we implemented are:
 ## Depth
 
 The feature that we implemented more in depth is the user's prescriptions. The database is prepopulated with one user and 3 prescriptions. When the user navigates to the refills page, data is fetched from the database and the prescription cards are displayed. Beyond this prototype, the application would take the prescription number from the add prescription screen and get real information from the pharmacy's database.
+
+The add reminder functionality has also been implemented. The user can add a reminder using a medication name, time, and days of the week. The reminder will then be displayed on the reminders screen.
