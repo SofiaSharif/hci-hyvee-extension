@@ -72,6 +72,146 @@ header img {
     margin-bottom: 20px;
 }
 
+.reminder-container {
+    display: flex;
+    flex-flow: column;
+    font-family: inherit;
+    background-color: #ffffff;
+    border: solid 3px #000000;
+    border-radius: 20px;
+    color: rgb(0,0,0);
+    padding: 15px 15px;
+    font-size: 16px;
+    min-width: 0;
+    margin-top: 10px;
+
+    /* display: grid;
+    display: inline-grid;
+    font-family: inherit;
+    background-color: #ffffff;
+    border: solid 3px #000000;
+    border-radius: 20px;
+    color: rgb(0,0,0);
+    padding: 15px 15px;
+    font-size: 16px;
+    min-width: 0;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "prescription-name prescription-name btn-icons"
+        "amount time time"
+        "description description description";
+    column-gap: 10px;
+    row-gap: 10px; */
+}
+
+.reminder-container-top-bar {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+.reminder-title {
+    font-size: 24px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.reminder-btn-icons {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.reminder-btn-icons img {
+    width: 26px;
+    height: 26px;
+}
+
+.reminder-time-display {
+    font-size: 40px;
+    margin: 6px;
+}
+
+.reminders-screen.reminder-day {
+    display: inline-block;
+    text-align: center;
+	border: 1px solid currentcolor;
+	color: #189934;
+	margin-right: .8rem;
+    padding-top: 10px;
+	width: 40px;
+    height: 30px;
+	border-radius: 1.3rem;
+}
+
+.reminders-screen.reminder-day.clicked {
+	background: #189934;
+	color: #fff;
+}
+
+.reminder-timer-selection {
+    display: flex;
+    align-items: center;
+    width: 330px;
+    height: 120px;
+    margin-bottom: 20px;
+}
+
+.select-div {
+    width: 90px;
+    font-size: 40px;
+}
+
+#add-reminder-alert {
+    font-size: 36px;
+    margin: 0px;
+    margin-bottom: 4px;
+}
+    #add-reminder-alert.added {
+        color: green;
+    }
+    #add-reminder-alert.error {
+        color: red;
+    }
+
+.day-check {
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.btn.day-check-primary {
+    display: inline-block;
+    /* text-align: center; */
+	border: 1px solid currentcolor;
+	color: #189934;
+	margin-right: .8rem;
+    padding-top: 10px;
+	width: 40px;
+    height: 30px;
+	border-radius: 1.3rem;
+}
+
+label:has(input[type=checkbox]:checked) {
+	background: #189934;
+	color: #fff;
+}
+
+label:has(input[type=checkbox]:not(:checked)):hover {
+	opacity: 0.5;
+}
+
+.btn.add-reminder {
+    margin: 30px;
+    padding: 5px;
+    font-size: 20px;
+    background: #eb9393;
+}
+
+.btn.btn.add-reminder:hover {
+    opacity: 0.8;
+}
+
 .back-btn {
     grid-column: 1;
     justify-self: start;
@@ -83,6 +223,24 @@ header img {
 .back-btn img {
     width: 35px;
     height: 32px;
+}
+
+.reminder-add-btn {
+    width: 95%;
+}
+
+.add-btn {
+    grid-column: 1;
+    justify-self: start;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    float: right;
+}
+
+.add-btn img {
+    width: 35px;
+    height: 35px;
 }
 
 .screen-header h1 {

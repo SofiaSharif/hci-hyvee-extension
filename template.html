@@ -86,19 +86,102 @@
         <!-- Reminders Screen-->
         <div id="screen reminders" class="screen reminders">
             <div class="screen-header">
-                <button class="back-btn" onclick="showScreen('screen main')">
-                    <img src="assests/screen-icons/back.png" alt="Back Icon">
+                <div>
+                    <button class="back-btn" onclick="showScreen('screen main')">
+                        <img src="assests/screen-icons/back.png" alt="Back Icon">
+                    </button>
+                </div>
+                <div><h1>Reminders</h1></div>
+            </div>
+            <div class="reminder-add-btn">
+                <button class="add-btn" onclick="showScreen('screen add-reminder')">
+                    <img src="assests/screen-icons/plus.png" alt="Plus Icon">
                 </button>
-                <h1>Reminders</h1>
+            </div>
+            <div class="main-container" id="reminders-main-container"> <!-- This class is used because of the spacing. -->
+                <div class="reminder-container">
+                    <div class="reminder-container-top-bar">
+                        <u class="reminder-title"> Name </u>
+                        <button class="reminder-btn-icons">
+                            <img src="assests/screen-icons/ellipses.png" alt="More Icon">
+                        </button>
+                    </div>
+                    <b class="reminder-time-display">
+                        --:-- a.m./p.m.
+                    </b>
+                    <div>
+                        <label class="reminders-screen reminder-day"> M </label>
+                        <label class="reminders-screen reminder-day"> T </label>
+                        <label class="reminders-screen reminder-day clicked"> W </label>
+                        <label class="reminders-screen reminder-day"> TH </label>
+                        <label class="reminders-screen reminder-day clicked"> F </label>
+                        <label class="reminders-screen reminder-day"> S </label>
+                        <label class="reminders-screen reminder-day"> SU </label>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- Add Reminder Screen-->
         <div id="screen add-reminder" class="screen add-reminder">
             <div class="screen-header">
-                <button class="back-btn" onclick="showScreen('screen main')">
+                <button class="back-btn" onclick="reminderGoBack('screen reminders')">
                     <img src="assests/screen-icons/back.png" alt="Back Icon">
                 </button>
                 <h1>Add Reminder</h1>
+            </div>
+            <b id="add-reminder-alert"></b>
+            <container class="reminder-timer-selection">
+                <select size="2" class="select-div" id="add-reminder-hour-select">  <!-- Note: I've removed the 'multiple' attribute -->
+                </select>
+                <p style="font-size:80px; width: 60px">&nbsp;:&nbsp;</p>
+                <select size="2" class="select-div" id="add-reminder-minute-select">  <!-- Note: I've removed the 'multiple' attribute -->
+                </select>
+                <select size="1" class="select-div" id="add-reminder-meridiem-select">  <!-- Note: I've removed the 'multiple' attribute -->
+                    <option selected = "selected">a.m.</option>
+                    <option>p.m.</option>
+                </select>
+            </container>
+            <div style="width: 403px">
+                <h2>Medication:</h2>
+                <input id="add-reminder-medication-input"></input>
+            </div>
+            <div style="width: 403px">
+                <h2>Repeats:</h2>
+                <div>
+                    <label class="btn day-check-primary" for="day-check-0" id="day-check-primary-0">
+                        <input type="checkbox" class="day-check" id="day-check-0" autocomplete="off">
+                        M
+                    </label>
+                    <label class="btn day-check-primary" for="day-check-1" id="day-check-primary-1">
+                        <input type="checkbox" class="day-check" id="day-check-1" autocomplete="off">
+                        T
+                    </label>
+                    <label class="btn day-check-primary" for="day-check-2" id="day-check-primary-2">
+                        <input type="checkbox" class="day-check" id="day-check-2" autocomplete="off">
+                        W
+                    </label>
+                    <label class="btn day-check-primary" for="day-check-3" id="day-check-primary-3">
+                        <input type="checkbox" class="day-check" id="day-check-3" autocomplete="off">
+                        TH
+                    </label>
+                    <label class="btn day-check-primary" for="day-check-4" id="day-check-primary-4">
+                        <input type="checkbox" class="day-check" id="day-check-4" autocomplete="off">
+                        F
+                    </label>
+                    <label class="btn day-check-primary" for="day-check-5" id="day-check-primary-5">
+                        <input type="checkbox" class="day-check" id="day-check-5" autocomplete="off">
+                        S
+                    </label>
+                    <label class="btn day-check-primary" for="day-check-6" id="day-check-primary-6">
+                        <input type="checkbox" class="day-check" id="day-check-6" autocomplete="off">
+                        SU
+                    </label>
+                </div>
+            </div>
+            <div>
+                <button class="btn add-reminder" id="add-reminder-button" onclick="addNewReminder()">
+                    ADD
+                </button>
             </div>
         </div>
         <!-- Status Screen-->
